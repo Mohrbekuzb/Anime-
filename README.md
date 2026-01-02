@@ -1,3 +1,5 @@
+# Anime Telegram Bot
+Simple Telegram bot that sends anime images.
 const TelegramBot = require("node-telegram-bot-api");
 const fetch = require("node-fetch");
 
@@ -24,15 +26,3 @@ bot.on("message", async (msg) => {
     bot.sendPhoto(msg.chat.id, data.url);
   }
 });
-{
-  "name": "anime-bot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "node-telegram-bot-api": "^0.61.0",
-    "node-fetch": "^2.6.7"
-  }
-}
